@@ -10,21 +10,22 @@
 			"email": "donnainsolita@gmail.com"
 		}
 	],
+	
+    	"require": {
+        	"yiisoft/yii2": "*",
+        	"yiisoft/yii2-bootstrap": "*",
+		"bower-asset/bootstrap-iconpicker":"dev-master"
+	},
 	"extra": {
 		"asset-repositories": [
-            {
-                "type": "bower-vcs",
-                "url": "https://github.com/3min/bootstrap-iconpicker",
-                "name": "bower-asset/bootstrap-iconpicker"
-            }
+          		{
+				"name": "bower-asset/bootstrap-iconpicker",
+                		"type": "bower-vcs",
+                		"url": "https://github.com/3min/bootstrap-iconpicker.git"
+                		
+            		}
         ]
 	},
-    "require": {
-        "yiisoft/yii2": "*",
-        "yiisoft/yii2-bootstrap": "*",
-	"bower-asset/bootstrap-iconpicker":"dev-fixed"
-	},
-	
 	"autoload": {
 		"psr-4": {
 			"insolita\\iconpicker\\": ""
